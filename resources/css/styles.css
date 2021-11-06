@@ -1,0 +1,80 @@
+
+/* Elements */
+
+* {
+    padding: 0;
+    margin: 0;  
+}
+
+html {
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+body {
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: 'Raleway', sans-serif;
+}
+
+header h1 {
+    padding-top: 30vh;
+}
+
+header p:after {
+    display: block;
+    content: "\2193";
+}
+
+main {
+    padding: 4rem;
+    hyphens: auto;
+    max-width: 1000px;
+}
+
+section {
+    padding-top: 200px;
+    height: 100vh;
+    width: auto;
+}
+
+section h1 {
+    padding-bottom: 1.5rem;
+}
+
+/* Classes */
+
+.navigation {
+    position: fixed;
+    background-color: #93B7BE;
+    z-index: 100;
+    width: 100%;
+}
+
+.navigation li {
+    text-decoration: none;
+    display: inline-block;
+    padding: 1.2rem;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    transition: 1s;
+}
+
+.white {
+    color: #fff;
+}
+
+/* ID's */
+#main-banner {
+    background-color: #93B7BE;
+    height: 100vh;
+    width: 100vw;
+}
+
