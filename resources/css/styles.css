@@ -63,7 +63,7 @@ input[type=submit] {
     transition: 1s;
   }
 
-  input[type=submit]:hover {
+input[type=submit]:hover {
     background-color: #e9e9e9;
     transition: 0.5s;
   }
@@ -111,6 +111,13 @@ input[type=submit] {
     background-color: #93B7BE;
 }
 
+#mig {
+    height: auto;
+    width: 500px;
+    border-radius: 10px;
+    
+}
+
 #about-me {
     background-color: #E9C46A;
 }
@@ -121,6 +128,10 @@ input[type=submit] {
 
 #contact {
     background-color: #2A9D8F
+}
+
+#footer {
+    background-color: #93B7BE;
 }
 
 /* Media Queries */
