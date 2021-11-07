@@ -41,8 +41,7 @@ section {
 section h1, p {
     max-width: 1000px;
     margin: 0 auto;
-    height: 10vh;
-    
+    height: 5vh;
 }
 
 /* Classes */
