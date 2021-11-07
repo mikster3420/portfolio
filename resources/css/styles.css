@@ -8,13 +8,15 @@
 
 html {
     scroll-behavior: smooth;
-    text-align: center;
 }
 
 body {
-    margin: 0 auto;
     line-height: 1.5;
     font-family: 'Raleway', sans-serif;
+}
+
+main, #banner {
+    text-align: center;
 }
 
 header h1 {
@@ -30,6 +32,7 @@ main {
     padding: 4rem;
     hyphens: auto;
     max-width: 1000px;
+    margin: 0 auto;
 }
 
 section {
@@ -45,6 +48,7 @@ section h1 {
 /* Classes */
 
 .navigation {
+    padding-left: 20px;
     position: fixed;
     background-color: #93B7BE;
     z-index: 100;
@@ -64,7 +68,6 @@ section h1 {
 
 .navigation a:hover {
     text-decoration: underline;
-    transition: 1s;
 }
 
 .white {
@@ -77,4 +80,3 @@ section h1 {
     height: 100vh;
     width: 100vw;
 }
-
