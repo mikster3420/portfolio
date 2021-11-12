@@ -217,7 +217,7 @@ footer {
 @media only screen and (min-width : 1824px){
 
         .wrap {
-            min-height: calc(100vh - 99px);
+            min-height: calc(100vh - 69px);
         }
 
         /* Classes */
@@ -293,8 +293,8 @@ footer {
         .lessons {
             border-top: 4rem solid #30343F;
             background-color: #fff;
-            width: 60%;
-            margin: 0 auto;
+            width: 80%;
+            padding-bottom: 2rem;
         }
 
         .lessons h1, li {
@@ -305,6 +305,6 @@ footer {
             position: relative;
             color: #fff;
             top: -1rem;
-            left: 30rem;
+            left: 11rem;
         }
     }
