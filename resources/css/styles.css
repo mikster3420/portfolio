@@ -6,18 +6,13 @@
 
 body {
     padding: 0;
+    margin: 0 auto;
     background-color: #EBEBEB;
     font-family: 'Mohave', sans-serif;
     line-height: 2;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
     overflow-x: hidden; 
-    margin: 0 auto;
-    box-sizing: border-box;
-}
-
-main {
-    text-align: center;
 }
 
 a {
@@ -29,41 +24,52 @@ footer {
     text-align: center;
     border: 1px solid #fff;
     background-color: #fff;
-    
 }
 
     /* Mobile one-column widget*/
 
+.widget-banner {
+    margin-top: 0;
+    color: #fff;   
+    background-color: #EF6461;
+}
+
 .widget {
-    display: inline-block;
-    border-top: 4rem solid #EF6461;
-    border-bottom: 21.5rem solid #fff;
-    box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 .45rem rgba(0, 0, 0, 0.5);
     width: 90%;
     background-color: #fff;
     vertical-align: top;
 }
 
+.feed-banner {
+    background-color: #3777FF;
+    margin-top: 0;
+    color: #fff;   
+}
     /* Mobile first column layout feed */
 .feed {
-    display: inline-block;
-    border-top: 4rem solid #3777FF;
-    border-bottom: 28rem solid #fff;
-    box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 .45rem rgba(0, 0, 0, 0.5);
     width: 90%;
-    
     background-color: #fff;
 
+}
+
+.text-align {
+    text-align: center;
 }
 
 /* Media Queries */
 
 /* Fixed nav bar and footer for mobile */
-@media (max-width: 769px) { 
+@media (max-width: 769px) {
+
     .feed {
         margin-top: 2rem;
     }
-    
+
+    .widget {
+        margin: 2rem 0 2rem 0;
+    }
 
     .navigation-desktop {
         width: 100%;
@@ -83,6 +89,14 @@ footer {
 /* Ipad2 (portrait) ----------- */
 @media only screen and (min-width : 768px) {
 
+    .container {
+        display: block;
+        width: 100%;
+        margin-top: 10vh;
+        margin-left: 3rem;
+        box-sizing: border-box;
+    }
+
     .navigation-desktop {
         display: fixed;
         background-color: #30343F;
@@ -93,13 +107,11 @@ footer {
 
     .navigation-desktop li {
         position: relative;
-        left: 2rem;
         display: inline-flex;
     }
 
     .navigation-desktop a {
         color: #D0D4DC;
-        margin-left: 3rem;
         padding: .5rem;
         transition: color ease-out.5s;
     }
@@ -115,7 +127,6 @@ footer {
 
     #navRight {
         position: relative;
-        
         display: inline-flex;
         float: right;
         margin-right: 4rem;
@@ -130,52 +141,61 @@ footer {
 /* Ipad2 (paysage) ----------- */
 @media only screen and (min-width : 1024px){ 
 
+    .navigation-desktop {
+        position: relative;
+        justify-content: space-between;
+        display: fixed;
+        background-color: #30343F;
+        width: 100%;
+    }
+
+    .navigation-desktop li {
+        position: relative;
+        justify-content: space-between;
+        display: inline-flex;
+    }
+
+    .navigation-desktop a {
+        display: flex;
+        color: #D0D4DC;
+        justify-content: space-between;
+        transition: color ease-out.5s;
+    }
+
+    .navigation-desktop a:hover {
+        color: #fff;
+        transition: color ease 600ms;
+    }
+
+    .container {
+        display: inline-flex;
+        width: 100%;
+        margin-top: 10vh;
+        /* margin-left: 3rem; */
+        box-sizing: border-box;
+    }
 
     .widget {
         width: 60%;
         margin-right: 3rem;
+        margin-bottom: 0;
     }
 
     .feed {
         width: 30%;
-        border-bottom: 27.5rem solid #fff;
-    }
-
-    .navigation-desktop li {
-        left: 1rem;
-    }
-        
-    .navigation-desktop a {
-        color: #D0D4DC;
-        margin-left: 2rem;
-        padding: .5rem;
-        transition: color ease-out.5s;
-    }
+    }  
 
     .wrap {
         min-height: calc(100vh - 95px);
     }
 
-
-    #navRight {
-        margin-right: 2.5rem;
-    }
-
 }
-
-/* Ordi (Petit) -----------
-@media only screen and (min-width : 1224px){
-
-} */
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1824px){
-        main {
-            padding-top: 2rem;
-        }
 
         .wrap {
-            min-height: calc(100vh - 68px);
+            min-height: calc(100vh - 99px);
         }
 
         /* Classes */
@@ -183,25 +203,17 @@ footer {
     /* Navigation */
 
         .navigation-desktop {
-            display: fixed;
             background-color: #30343F;
             width: 100%;
-            padding: .5rem;
-            font-size: 1.25rem;
-            justify-content: space-between;
         }
 
         .navigation-desktop li {
-            position: relative;
-            justify-content: space-between;
-            left: 5rem;
             display: inline-flex;
         }
 
         .navigation-desktop a {
             display: flex;
             color: #D0D4DC;
-            justify-content: space-between;
             transition: color ease-out.5s;
         }
 
@@ -210,14 +222,20 @@ footer {
             transition: color ease 600ms;
         }
 
+        .container {
+            display: inline-flex;
+            width: 100%;
+            margin-top: 10vh;
+            box-sizing: border-box;
+        }
+
         /* Widget */
         .widget {
-            display: inline-block;
-            border-top: 4rem solid #EF6461;
-            border-bottom: 21.5rem solid #fff;
-            box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
+            box-shadow: 0 .45rem rgba(0, 0, 0, 0.5);
             width: 60%;
+            height: 20rem;
             background-color: #fff;
+            margin-bottom: 0;
         }
         
         .widget a {
@@ -230,10 +248,9 @@ footer {
         }
 
         /* News feed */
+
         .feed {
-            display: inline-block;
-            border-top: 4rem solid #3777FF;
-            box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
+            box-shadow: 0 .45rem rgba(0, 0, 0, 0.5);
             width: 30%;
             background-color: #fff;
         }
@@ -251,16 +268,21 @@ footer {
             padding: 0;
         }
 
-        .container {
-            justify-content: space-between;
+        .lessons {
+            border-top: 4rem solid #30343F;
+            background-color: #fff;
+            width: 60%;
+            margin: 0 auto;
         }
-                                    /* ID's */
-        
-        #navRight {
-            margin-right: 5rem;
+
+        .lessons h1, li {
+            padding-left: 2rem;
         }
-        
-        .wrap {
-            min-height: calc(100vh - 100px);
+
+        .lesson-title {
+            position: relative;
+            color: #fff;
+            top: -1rem;
+            left: 30rem;
         }
     }
