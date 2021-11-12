@@ -10,6 +10,7 @@ body {
     scrollbar-width: none; /* for Firefox */
     overflow-x: hidden; 
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 /* h1 {
@@ -75,111 +76,7 @@ footer {
 
                     /* Media Queries */
 
-@media (min-width: 769px) {
 
-    main {
-        padding-top: 2rem;
-        padding-left: 4rem;
-        margin: 0 auto;
-    }
-
-    .wrap {
-        min-height: calc(100vh - 68px);
-
-    }
-
-     /* Classes */
-
-/* Navigation */
-
-    .navigation-desktop {
-        display: fixed;
-        background-color: #30343F;
-        width: 100%;
-        padding: .5rem;
-        font-size: 1.25rem;
-    }
-
-    .navigation-desktop li {
-        position: relative;
-        left: 3rem;
-        display: inline-flex;
-    }
-
-    .navigation-desktop a {
-        color: #D0D4DC;
-        margin-left: 3rem;
-        padding: .5rem;
-        transition: color ease-out.5s;
-    }
-
-    .navigation-desktop a:hover {
-        color: #fff;
-        transition: color ease 600ms;
-    }
-
-    .navigation-mobile {
-        visibility:hidden;
-    }
-
-    /* Widget */
-    .widget {
-        display: inline-block;
-        border-top: 4rem solid #EF6461;
-        border-bottom: 21.5rem solid #fff;
-        box-sizing: border-box;
-        box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
-        width: 60%;
-        background-color: #fff;
-        vertical-align: top;
-    }
-    
-    .widget a {
-        transition: color ease-out .5s;
-    }
-    
-    .widget a:hover {
-        color: #b6b4b4;
-        transition: color 1s;
-    }
-
-    /* News feed */
-    .feed {
-        vertical-align: top;
-        display: inline-block;
-        border-top: 4rem solid #3777FF;
-        border-bottom: 27.5rem solid #fff;
-        box-sizing: border-box;
-        box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
-        width: 30%;
-        margin-left: 6rem;
-        background-color: #fff;
-    }
-    
-    .feed a {
-        transition: color ease-out .5s;
-    }
-    
-    .feed a:hover {
-        color: #b6b4b4;
-        transition: color 1s;
-    }
-    
-    .widget h1, .feed h2 {
-        padding: 0;
-    }
-    
-                                /* ID's */
-    
-    #navRight {
-        position: relative;
-        
-        display: inline-flex;
-        float: right;
-        margin-right: 3rem;
-    }
-    
-}
 
 @media (max-width: 769px) {
     .feed {
@@ -199,3 +96,189 @@ footer {
         visibility: hidden;
     }
 }
+
+/* Smartphones (portrait) ----------- */
+
+/* Ipad2 (portrait) ----------- */
+@media only screen and (min-width : 768px) {
+
+    .navigation-desktop {
+        display: fixed;
+        background-color: #30343F;
+        width: 100%;
+        padding: .5rem;
+        font-size: 1.25rem;
+    }
+
+    .navigation-desktop li {
+        position: relative;
+        left: 2rem;
+        display: inline-flex;
+    }
+
+    .navigation-desktop a {
+        color: #D0D4DC;
+        margin-left: 3rem;
+        padding: .5rem;
+        transition: color ease-out.5s;
+    }
+
+    .navigation-desktop a:hover {
+        color: #fff;
+        transition: color ease 600ms;
+    }
+
+    .widget {
+        margin-bottom: 2rem;
+    }
+
+    #navRight {
+        position: relative;
+        
+        display: inline-flex;
+        float: right;
+        margin-right: 4rem;
+    }
+    
+    footer {
+        margin-top: 3rem;
+    }
+
+}
+
+/* Ipad2 (paysage) ----------- */
+@media only screen and (min-width : 1024px){ 
+
+    .widget {
+        width: 60%;
+        margin-right: 3rem;
+    }
+
+    .feed {
+        width: 30%;
+        border-bottom: 27.5rem solid #fff;
+    }
+
+    .navigation-desktop li {
+        left: 1rem;
+    }
+        
+    .navigation-desktop a {
+        color: #D0D4DC;
+        margin-left: 2rem;
+        padding: .5rem;
+        transition: color ease-out.5s;
+    }
+
+    #navRight {
+        margin-right: 2.5rem;
+    }
+
+}
+
+/* Ordi (Petit) -----------
+@media only screen and (min-width : 1224px){
+
+} */
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1824px){
+        main {
+            padding-top: 2rem;
+            padding-left: 4rem;
+            margin: 0 auto;
+        }
+
+        .wrap {
+            min-height: calc(100vh - 68px);
+
+        }
+
+        /* Classes */
+
+    /* Navigation */
+
+        .navigation-desktop {
+            display: fixed;
+            background-color: #30343F;
+            width: 100%;
+            padding: .5rem;
+            font-size: 1.25rem;
+        }
+
+        .navigation-desktop li {
+            position: relative;
+            left: 3rem;
+            display: inline-flex;
+        }
+
+        .navigation-desktop a {
+            color: #D0D4DC;
+            margin-left: 3rem;
+            padding: .5rem;
+            transition: color ease-out.5s;
+        }
+
+        .navigation-desktop a:hover {
+            color: #fff;
+            transition: color ease 600ms;
+        }
+
+
+        /* Widget */
+        .widget {
+            display: inline-block;
+            border-top: 4rem solid #EF6461;
+            border-bottom: 21.5rem solid #fff;
+            box-sizing: border-box;
+            box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
+            width: 60%;
+            background-color: #fff;
+            vertical-align: top;
+        }
+        
+        .widget a {
+            transition: color ease-out .5s;
+        }
+        
+        .widget a:hover {
+            color: #b6b4b4;
+            transition: color 1s;
+        }
+
+        /* News feed */
+        .feed {
+            vertical-align: top;
+            display: inline-block;
+            border-top: 4rem solid #3777FF;
+            border-bottom: 27.5rem solid #fff;
+            box-sizing: border-box;
+            box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
+            width: 30%;
+            margin-left: 6rem;
+            background-color: #fff;
+        }
+        
+        .feed a {
+            transition: color ease-out .5s;
+        }
+        
+        .feed a:hover {
+            color: #b6b4b4;
+            transition: color 1s;
+        }
+        
+        .widget h1, .feed h2 {
+            padding: 0;
+        }
+                                    /* ID's */
+        
+        #navRight {
+            position: relative;
+            
+            display: inline-flex;
+            float: right;
+            margin-right: 3rem;
+        }
+        
+    }
