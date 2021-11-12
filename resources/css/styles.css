@@ -214,18 +214,20 @@ footer {
             width: 100%;
             padding: .5rem;
             font-size: 1.25rem;
+            justify-content: space-between;
         }
 
         .navigation-desktop li {
             position: relative;
-            left: 3rem;
+            justify-content: space-between;
+            left: 5rem;
             display: inline-flex;
         }
 
         .navigation-desktop a {
+            display: flex;
             color: #D0D4DC;
-            margin-left: 3rem;
-            padding: .5rem;
+            justify-content: space-between;
             transition: color ease-out.5s;
         }
 
@@ -233,7 +235,6 @@ footer {
             color: #fff;
             transition: color ease 600ms;
         }
-
 
         /* Widget */
         .widget {
@@ -244,7 +245,6 @@ footer {
             box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
             width: 60%;
             background-color: #fff;
-            vertical-align: top;
         }
         
         .widget a {
@@ -258,14 +258,11 @@ footer {
 
         /* News feed */
         .feed {
-            vertical-align: top;
             display: inline-block;
             border-top: 4rem solid #3777FF;
-            border-bottom: 27.5rem solid #fff;
             box-sizing: border-box;
             box-shadow: .30rem .45rem rgba(0, 0, 0, 0.5);
             width: 30%;
-            margin-left: 3rem;
             background-color: #fff;
         }
         
@@ -281,14 +278,14 @@ footer {
         .widget h1, .feed h2 {
             padding: 0;
         }
+
+        .container {
+            justify-content: space-between;
+        }
                                     /* ID's */
         
         #navRight {
-            position: relative;
-            
-            display: inline-flex;
-            float: right;
-            margin-right: 3rem;
+            margin-right: 5rem;
         }
         
         .wrap {
