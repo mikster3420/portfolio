@@ -63,13 +63,31 @@ footer {
 /* Fixed nav bar and footer for mobile */
 @media (max-width: 769px) {
 
-    .feed {
-        margin-top: 2rem;
+    .wrap {
+        min-height: calc(100vh - 99px);
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        margin-top: 2vh;
+        margin-left: 2rem;
+        box-sizing: border-box;
     }
 
     .widget {
-        margin: 2rem 0 2rem 0;
+     height: 20rem;
     }
+
+    .feed {
+        margin-top: 2rem;
+        box-shadow: 0 .45rem rgba(0, 0, 0, 0.5);
+        width: 90%;
+        height: 20rem;
+        background-color: #fff;
+    }
+
+
 
     .navigation-desktop {
         width: 100%;
@@ -89,10 +107,14 @@ footer {
 /* Ipad2 (portrait) ----------- */
 @media only screen and (min-width : 768px) {
 
+    .wrap {
+        min-height: calc(100vh - 69px);
+    }
+
     .container {
-        display: block;
+        display: inline-block;
         width: 100%;
-        margin-top: 10vh;
+        margin-top: 5vh;
         margin-left: 3rem;
         box-sizing: border-box;
     }
@@ -108,6 +130,7 @@ footer {
     .navigation-desktop li {
         position: relative;
         display: inline-flex;
+        margin-left: 3rem;
     }
 
     .navigation-desktop a {
@@ -122,8 +145,14 @@ footer {
     }
 
     .widget {
+        height: 20rem;
         margin-bottom: 2rem;
     }
+
+    .feed {
+        height: 20rem;
+    }
+  
 
     #navRight {
         position: relative;
@@ -132,27 +161,20 @@ footer {
         margin-right: 4rem;
     }
 
-    footer {
-        margin-top: 2rem;
-    }
-
+    
 }
 
 /* Ipad2 (paysage) ----------- */
 @media only screen and (min-width : 1024px){ 
 
     .navigation-desktop {
-        position: relative;
-        justify-content: space-between;
-        display: fixed;
         background-color: #30343F;
         width: 100%;
     }
 
     .navigation-desktop li {
-        position: relative;
-        justify-content: space-between;
         display: inline-flex;
+        margin-left: 2rem;
     }
 
     .navigation-desktop a {
