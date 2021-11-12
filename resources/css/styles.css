@@ -35,7 +35,6 @@ a {
 
 footer {
     text-align: center;
-    margin-top: 6em;
     border: 1px solid #fff;
     background-color: #fff;
 }
@@ -73,6 +72,7 @@ footer {
 }
 
 
+
                     /* Media Queries */
 
 @media (min-width: 769px) {
@@ -83,43 +83,43 @@ footer {
         margin: 0 auto;
     }
 
-    footer {
-        width: 100%;
-        margin-top: 7.2rem;
+    .wrap {
+        min-height: calc(100vh - 68px);
+
     }
 
      /* Classes */
 
 /* Navigation */
 
-    .navigation {
-       
+    .navigation-desktop {
         display: fixed;
         background-color: #30343F;
         width: 100%;
         padding: .5rem;
+        font-size: 1.25rem;
     }
 
-    .navigation li {
+    .navigation-desktop li {
         position: relative;
         left: 3rem;
         display: inline-flex;
     }
 
-    .navigation a {
+    .navigation-desktop a {
         color: #D0D4DC;
         margin-left: 3rem;
         padding: .5rem;
         transition: color ease-out.5s;
     }
 
-    .navigation a:hover {
+    .navigation-desktop a:hover {
         color: #fff;
         transition: color ease 600ms;
     }
 
-    .navigation .logo {
-        font-size: 1.5rem;
+    .navigation-mobile {
+        visibility:hidden;
     }
 
     /* Widget */
@@ -173,7 +173,7 @@ footer {
     
     #navRight {
         position: relative;
-        top: .25rem;
+        
         display: inline-flex;
         float: right;
         margin-right: 3rem;
@@ -184,5 +184,18 @@ footer {
 @media (max-width: 769px) {
     .feed {
         margin-top: 2rem;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+
+    .navigation-desktop {
+        width: 100%;
+        height: 50px;
+        background-color:#30343F;
+    }
+
+    .navigation-desktop li {
+        visibility: hidden;
     }
 }
