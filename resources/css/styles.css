@@ -38,8 +38,13 @@ footer {
     text-align: center;
     border: 1px solid #fff;
     background-color: #fff;
+    
 }
-          
+
+.wrap {
+    min-height: calc(100vh - 68px);
+}
+
 
 .widget {
     display: inline-block;
@@ -82,9 +87,7 @@ footer {
     .feed {
         margin-top: 2rem;
     }
-    footer {
-        margin-top: 2rem;
-    }
+    
 
     .navigation-desktop {
         width: 100%;
@@ -94,6 +97,10 @@ footer {
 
     .navigation-desktop li {
         visibility: hidden;
+    }
+
+    footer {
+        margin-top: 2rem;
     }
 }
 
@@ -139,9 +146,9 @@ footer {
         float: right;
         margin-right: 4rem;
     }
-    
+
     footer {
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 
 }
@@ -191,7 +198,6 @@ footer {
 
         .wrap {
             min-height: calc(100vh - 68px);
-
         }
 
         /* Classes */
