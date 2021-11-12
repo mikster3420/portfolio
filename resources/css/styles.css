@@ -156,6 +156,7 @@ footer {
 /* Ipad2 (paysage) ----------- */
 @media only screen and (min-width : 1024px){ 
 
+
     .widget {
         width: 60%;
         margin-right: 3rem;
@@ -176,6 +177,11 @@ footer {
         padding: .5rem;
         transition: color ease-out.5s;
     }
+
+    .wrap {
+        min-height: calc(100vh - 95px);
+    }
+
 
     #navRight {
         margin-right: 2.5rem;
@@ -287,4 +293,7 @@ footer {
             margin-right: 3rem;
         }
         
+        .wrap {
+            min-height: calc(100vh - 100px);
+        }
     }
