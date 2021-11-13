@@ -70,7 +70,7 @@ footer {
     .container {
         display: block;
         width: 100%;
-        margin-top: 2vh;
+        margin-top: 5vh;
         margin-left: 2rem;
         box-sizing: border-box;
     }
@@ -208,7 +208,25 @@ footer {
     }  
 
     .wrap {
-        min-height: calc(100vh - 95px);
+        min-height: calc(100vh - 69px);
+    }
+
+    .lessons {
+        border-top: 4rem solid #30343F;
+        background-color: #fff;
+        width: 60%;
+        padding-bottom: 2rem;
+    }
+
+    .lessons h1, li {
+        padding-left: 2rem;
+    }
+
+    .lesson-title {
+        position: relative;
+        color: #fff;
+        top: -1rem;
+        left: 11.5rem;
     }
 
 }
@@ -293,7 +311,7 @@ footer {
         .lessons {
             border-top: 4rem solid #30343F;
             background-color: #fff;
-            width: 80%;
+            width: 60%;
             padding-bottom: 2rem;
         }
 
@@ -305,6 +323,6 @@ footer {
             position: relative;
             color: #fff;
             top: -1rem;
-            left: 11rem;
+            left: 11.5rem;
         }
     }
