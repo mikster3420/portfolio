@@ -12,18 +12,21 @@ body {
     line-height: 2;
     -ms-overflow-style: none; /* for Internet Explorer, Edge */
     scrollbar-width: none; /* for Firefox */
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.navigation-desktop {
+    display: fixed;
+    background-color: #30343F;
+    width: 100vw;
+    padding: .5rem 0 .5rem .5rem;
+    font-size: 1.25rem;
 }
 
 a {
     text-decoration: none;
     color: #000;
-}
-
-footer {
-    text-align: center;
-    border: 1px solid #fff;
-    background-color: #fff;
 }
 
     /* Mobile one-column widget*/
@@ -58,20 +61,22 @@ footer {
     text-align: center;
 }
 
+footer {
+    text-align: center;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
 /* Media Queries */
 
 /* Fixed nav bar and footer for mobile */
 @media (max-width: 769px) {
 
-    .wrap {
-        min-height: calc(100vh - 99px);
-    }
-
     .container {
         display: block;
         width: 100%;
-        margin-top: 5vh;
-        margin-left: 2rem;
+        margin-top: 3vh;
+        margin-left: 1rem;
         box-sizing: border-box;
     }
 
@@ -87,8 +92,6 @@ footer {
         background-color: #fff;
     }
 
-
-
     .navigation-desktop {
         width: 100%;
         height: 50px;
@@ -99,6 +102,10 @@ footer {
         visibility: hidden;
     }
 
+    .wrap {
+        min-height: calc(100vh - 99px);
+    }
+
     footer {
         margin-top: 2rem;
     }
@@ -106,10 +113,6 @@ footer {
 
 /* Ipad2 (portrait) ----------- */
 @media only screen and (min-width : 768px) {
-
-    .wrap {
-        min-height: calc(100vh - 69px);
-    }
 
     .container {
         display: inline-block;
@@ -139,6 +142,13 @@ footer {
         transition: color ease-out.5s;
     }
 
+    #navRight {
+        position: relative;
+        display: inline-flex;
+        float: right;
+        margin-right: 4rem;
+    }
+
     .navigation-desktop a:hover {
         color: #fff;
         transition: color ease 600ms;
@@ -152,16 +162,10 @@ footer {
     .feed {
         height: 20rem;
     }
-  
 
-    #navRight {
-        position: relative;
-        display: inline-flex;
-        float: right;
-        margin-right: 4rem;
-    }
-
-    
+    .wrap {
+        min-height: calc(100vh - 69px);
+    } 
 }
 
 /* Ipad2 (paysage) ----------- */
@@ -234,10 +238,6 @@ footer {
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1824px){
 
-        .wrap {
-            min-height: calc(100vh - 69px);
-        }
-
         /* Classes */
 
     /* Navigation */
@@ -270,6 +270,7 @@ footer {
         }
 
         /* Widget */
+
         .widget {
             box-shadow: 0 .45rem rgba(0, 0, 0, 0.5);
             width: 60%;
@@ -325,4 +326,10 @@ footer {
             top: -1rem;
             left: 11.5rem;
         }
+
+        .wrap {
+            min-height: calc(100vh - 69px);
+        }
+
+
     }
